@@ -1,0 +1,63 @@
+SECTION C: DBMS
+
+Q21. What is normalization?
+A: Organizing data to reduce redundancy and improve integrity. 1NF removes repeating groups, 2NF removes partial dependencies, and 3NF removes transitive dependencies.
+
+Q22. What is indexing?
+A: A data structure that improves the speed of data retrieval operations in a database.
+
+Q23. Write a query to find the second highest salary.
+A (SQL):
+
+SELECT MAX(salary) FROM employees WHERE salary < (SELECT MAX(salary) FROM employees);
+
+Q24. Difference between DELETE and TRUNCATE?
+A: DELETE removes rows one-by-one (can be rolled back); TRUNCATE removes all rows quickly without logging (cannot be rolled back).
+
+Q25. What is a primary key and a foreign key?
+A: A primary key uniquely identifies each record in a table. A foreign key is a field in one table that refers to the primary key in another table.
+
+Q26. What is a transaction in DBMS?
+A: A transaction is a sequence of operations performed as a single logical unit of work. It must follow ACID properties — Atomicity, Consistency, Isolation, Durability.
+
+Q27. What is a JOIN? Name its types.
+A: A JOIN combines rows from two or more tables based on a related column. Types: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN.
+
+Q28. Difference between WHERE and HAVING clause?
+A: WHERE is used to filter rows before grouping, while HAVING is used to filter groups after aggregation.
+
+Q29. What are views in SQL?
+A: A view is a virtual table based on the result-set of an SQL query. It does not store data itself but presents data from one or more tables.
+
+Q30. What is the difference between clustered and non-clustered index?
+A: A clustered index determines the physical order of data in a table. A non-clustered index is a separate structure with pointers to the data.
+
+Q31. What is a stored procedure?
+A: A stored procedure is a prepared SQL code that you can save and reuse. It helps reduce redundancy and improves performance.
+
+Q32. What is a trigger?
+A: A trigger is a SQL code that automatically runs in response to certain events on a table or view, like INSERT, UPDATE, or DELETE.
+
+Q33. What is the difference between CHAR and VARCHAR?
+A: CHAR is fixed-length, while VARCHAR is variable-length. CHAR is more efficient for fixed-size values.
+
+Q34. What are constraints in SQL?
+A: Constraints are rules enforced on data columns like NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, and DEFAULT.
+
+Q35. What is denormalization?
+A: Denormalization is the process of adding redundancy to a database to improve read performance.
+
+Q36. How do you prevent SQL injection?
+A: Use prepared statements or parameterized queries instead of dynamic SQL, and validate user inputs.
+
+Q37. What is a composite key?
+A: A composite key is a combination of two or more columns used to uniquely identify a record.
+
+Q38. Explain ACID properties.
+A: Atomicity, Consistency, Isolation, Durability — together they ensure safe and correct transaction processing.
+
+Q39. What is a subquery?
+A: A subquery is a query nested within another query. It can be used in SELECT, INSERT, UPDATE, or DELETE.
+
+Q40. Difference between INNER JOIN and OUTER JOIN?
+A: INNER JOIN returns matching rows. OUTER JOIN returns matched + unmatched rows from one or both tables (LEFT, RIGHT, FULL).
