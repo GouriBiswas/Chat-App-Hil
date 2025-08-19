@@ -1,4 +1,4 @@
-# Hitachi ChatApp
+# Hil ChatApp
 
 A full-stack, real-time chat application with one-to-one and group messaging, media/file sharing, search, notifications, user profiles, and authentication. Built as a monorepo with a React + Vite + Tailwind frontend and an Express + Socket.io + MongoDB backend. Includes a future-ready Customer Request system scaffold.
 
